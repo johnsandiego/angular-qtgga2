@@ -11,6 +11,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ShippingComponent } from './shipping/shipping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
       { path: 'shipping', component: ShippingComponent },
     ]),
     BrowserAnimationsModule,
+    MatSidenavModule,
   ],
   declarations: [
     AppComponent,
