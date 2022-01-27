@@ -10,6 +10,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductAlertsComponent,
     ProductDetailsComponent,
     ShippingComponent,
+    SideNavComponent,
   ],
   bootstrap: [AppComponent],
 })
