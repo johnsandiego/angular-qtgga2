@@ -7,10 +7,9 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ShippingComponent } from './shipping/shipping.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 @NgModule({
   imports: [
@@ -19,7 +18,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'shipping', component: ShippingComponent },
     ]),
     BrowserAnimationsModule,
     MatSidenavModule,
@@ -29,8 +27,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     TopBarComponent,
     ProductListComponent,
     ProductDetailsComponent,
-    ShippingComponent,
-    SideNavComponent,
+    ProductAlertsComponent,
   ],
   bootstrap: [AppComponent],
 })
